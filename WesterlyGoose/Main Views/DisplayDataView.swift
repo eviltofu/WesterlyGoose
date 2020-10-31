@@ -39,8 +39,8 @@ struct DisplayDataView: View {
             .scaledToFill()
             .frame(width: 128.0, height: 128.0, alignment: .center)
             .clipShape(Circle())
-            .overlay(Circle().stroke(Color.black, lineWidth: 4.0)
-                        .foregroundColor(.black)))
+            .overlay(Circle().stroke(Color.primary, lineWidth: 4.0)
+                        .foregroundColor(.secondary)))
         } else {
             return AnyView(Text("No image available"))
         }
