@@ -224,6 +224,5 @@ class UserModel: ObservableObject {
         userName = nil
         gitHubUser = nil
         gitHubUserRepos = nil
-        lastError = .noError
     }
 }
