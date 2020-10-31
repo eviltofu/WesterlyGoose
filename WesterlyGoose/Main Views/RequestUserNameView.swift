@@ -15,6 +15,8 @@ struct RequestUserNameView: View {
             Spacer()
             Text("Name of user to fetch")
             TextField("User name", text: $userName)
+                .textContentType(.username)
+                .keyboardType(.asciiCapable)
                 .multilineTextAlignment(/*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
             Spacer()
             Button("Fetch") {
