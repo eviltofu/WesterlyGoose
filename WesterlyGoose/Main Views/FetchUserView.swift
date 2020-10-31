@@ -11,16 +11,16 @@ struct FetchUserView: View {
     @StateObject var model = UserModel()
     var body: some View {
         if [.requestUserName].contains(model.state) {
-            RequestUserNameView(model: model).padding()
+            RequestUserNameView(model: model)
         }
         if [.fetchingUser, .fetchedUserOk, .fetchingRepos].contains(model.state) {
-            FetchDataView(model: model).padding()
+            FetchDataView(model: model)
         }
         if [.displayUserOk].contains(model.state) {
             DisplayDataView(model: model)
         }
         if [.displayError].contains(model.state) {
-            DisplayErrorView(model: model).padding()
+            DisplayErrorView(model: model)
         }
     }
 }
